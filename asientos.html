@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Disfruta de las mejores películas en Cinerama">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinerama</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="peliculas.css"> <!-- Estilos para las películas -->
+    <link rel="stylesheet" href="asientos.css"> <!-- Estilos para la selección de asientos -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="https://www.pentarama.com/_admin/assets/images/logo/logo.png" alt="Cinerama Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                    
+                    <li><a href="Dashboard.html">Dashboard</a></li>                    
+                </ul>
+                </nav>
+                    <div>
+                        <a href="usuario.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                              </svg></a>
+                    </div>
+        </div>
+    </header>
+    </header>
+
+    <main>
+        <section class="pantalla-asientos">
+            <div class="container">
+                <div class="pantalla">
+                    <div class="screen-content">Pantalla</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seleccion-asientos">
+            <div class="container">
+                <div class="seat-map  seat-map_medium" style="width: 100%;">
+                    <table class="seat-map--table">
+                        <thead>
+                            <tr>
+                                <th colspan="21">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr height="30px">
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                            </tr> -->
+                            <!-- <tr height="30px">
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                            </tr> -->
+                            <tr height="30px">
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                            </tr>
+                            <!-- inicio fila A -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">A</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_special" tabindex="0">
+                                                    <div>
+                                                        <div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="6 6 18 18" class="injected-svg seat-map--seat-icon" style="fill:#004A8C;" data-src="/757e0119410b3564ad39.svg">
+                                                                <title>wheel_chair</title>
+                                                                <path d="M21.58,18.38l-1.42.55-2.1-4.44H13.56l-.15-.8-.15-1.06-.35-2.33.18,0a1.41,1.41,0,1,0-1.47-1.41v.32c0,.16,1,6.31,1,6.31h4.73l2.25,4.74L22,19.36Z"></path>
+                                                                <path d="M17.08,17.6a3.92,3.92,0,0,1-4,3.83,3.92,3.92,0,0,1-4-3.83,3.8,3.8,0,0,1,2.34-3.47l-.15-1.07A4.89,4.89,0,0,0,8,17.62a5,5,0,0,0,5.1,4.88A5.07,5.07,0,0,0,18,19l-.92-1.87A3.24,3.24,0,0,1,17.08,17.6Z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_special" tabindex="0">
+                                                    <div>
+                                                        <div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="6 6 18 18" class="injected-svg seat-map--seat-icon" style="fill:#004A8C;" data-src="/757e0119410b3564ad39.svg">
+                                                                <title>wheel_chair</title>
+                                                                <path d="M21.58,18.38l-1.42.55-2.1-4.44H13.56l-.15-.8-.15-1.06-.35-2.33.18,0a1.41,1.41,0,1,0-1.47-1.41v.32c0,.16,1,6.31,1,6.31h4.73l2.25,4.74L22,19.36Z"></path>
+                                                                <path d="M17.08,17.6a3.92,3.92,0,0,1-4,3.83,3.92,3.92,0,0,1-4-3.83,3.8,3.8,0,0,1,2.34-3.47l-.15-1.07A4.89,4.89,0,0,0,8,17.62a5,5,0,0,0,5.1,4.88A5.07,5.07,0,0,0,18,19l-.92-1.87A3.24,3.24,0,0,1,17.08,17.6Z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">A15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">A</td>
+                            </tr>
+                            <!-- fin de fila A -->
+                            <!-- inicio fila B -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">B</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">B15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">B</td>
+                            </tr>
+                            <!-- fin de fila B -->
+                            <!-- inicio fila C -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">C</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">C15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">C</td>
+                            </tr>
+                            <!-- fin de fila C -->
+                            <!-- inicio fila D -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">D</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">D15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">D</td>
+                            </tr>
+                            <!-- fin de fila D -->
+                            <!-- inicio fila E -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">E</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">E15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">E</td>
+                            </tr>
+                            <!-- fin de fila E -->
+                            <!-- inicio fila F -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">F</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">F15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">F</td>
+                            </tr>
+                            <!-- fin de fila F -->
+                            <!-- inicio fila G -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">G</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">G15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">G</td>
+                            </tr>
+                            <!-- fin de fila G -->
+                            <!-- inicio fila H -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">H</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">H15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">H</td>
+                            </tr>
+                            <!-- fin de fila H -->
+                            <!-- inicio fila I -->
+                            <tr>
+                                <td class="seat-map--seat-container" width="19">I</td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I3</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I4</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I5</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I6</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I7</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I8</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I9</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I10</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I11</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I12</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I13</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I14</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19">
+                                    <div class="flyout  flyout_rounded  " role="button">
+                                        <div class="flyout--container">
+                                            <div class="flyout--children-wrapper">
+                                                <div class="seat-map--seat seat-map--seat_available" tabindex="0">
+                                                    <div class="seat-map--seat-inner-indicator">I15</div>
+                                                    <img alt="Butaca" class="seat-map--seat-image" src="media/asiento.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="seat-map--seat-container" width="19"></td><td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19"></td>
+                                <td class="seat-map--seat-container" width="19">I</td>
+                            </tr>
+                            <!-- fin de fila I -->
+                        </tbody>
+                    </table>
+                    <ul class="seat-map--legend">
+                        <li class="seat-map--legend-item">
+                            <span class="seat-map--legend-item-indicator seat-map--seat_available"></span>
+                            <img alt="Butaca" class="seat-map--seat-image disponible" src="media/asiento.png">
+                            <span class="seat-map--legend-item-decription">Disponible</span>
+                        </li>
+                        <li class="seat-map--legend-item">
+                            <span class="seat-map--legend-item-indicator seat-map--seat_ocupied"></span>
+                            <img alt="Butaca" class="seat-map--seat-image ocupado" src="media/asiento.png">
+                            <span class="seat-map--legend-item-decription">Ocupada</span>
+                        </li>
+                        <li class="seat-map--legend-item">
+                            <span class="seat-map--legend-item-indicator seat-map--seat_selected"></span>
+                            <img alt="Butaca" class="seat-map--seat-image seleccionado" src="media/asiento.png">
+                            <span class="seat-map--legend-item-decription">Seleccionada</span>
+                        </li>
+                        <li class="seat-map--legend-item">
+                            <span class="icon cineplanet-icon cineplanet-icon_wheel_chair cineplanet-icon_small seat-map--legend-item-icon seat-map--seat_disabled" role="presentation"></span>
+                            <div class="silla"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="6 6 18 18" class="injected-svg seat-map--seat-icon" style="fill:#004A8C;" data-src="/757e0119410b3564ad39.svg">
+                                <title>wheel_chair</title>
+                                <path d="M21.58,18.38l-1.42.55-2.1-4.44H13.56l-.15-.8-.15-1.06-.35-2.33.18,0a1.41,1.41,0,1,0-1.47-1.41v.32c0,.16,1,6.31,1,6.31h4.73l2.25,4.74L22,19.36Z"></path>
+                                <path d="M17.08,17.6a3.92,3.92,0,0,1-4,3.83,3.92,3.92,0,0,1-4-3.83,3.8,3.8,0,0,1,2.34-3.47l-.15-1.07A4.89,4.89,0,0,0,8,17.62a5,5,0,0,0,5.1,4.88A5.07,5.07,0,0,0,18,19l-.92-1.87A3.24,3.24,0,0,1,17.08,17.6Z"></path>
+                            </svg></div>
+                            <span class="seat-map--legend-item-decription">Silla de ruedas</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="booking-details">
+                    <h2>Selecciona tus asientos</h2>
+                    <p>Película: <span id="movie-title">Nombre de la película</span></p>
+                    <p>Fecha y hora: <span id="showtime">Fecha y hora de la función</span></p>
+                    <p>Asientos seleccionados: <span id="selected-seats">-</span></p>
+                    <a href="#" class="btn btn-comprar">Confirmar reserva</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <img src="https://www.pentarama.com/_admin/assets/images/logo/logo.png" alt="Cineplanet Logo" class="footer-logo">
+                <p>&copy; 2024 Cinerama. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contacto</h3>
+                <p>Av. José Pardo 121, Miraflores, Lima - Perú</p>
+                <p>Teléfono: +51 1 626-9898</p>
+                <p>Email: informes@cinerama.com.pe</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para mostrar el trailer -->
+    <div id="trailerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTrailerModal()">&times;</span>
+            <iframe id="trailerFrame" width="560" height="510" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <script src="https://cdn.userway.org/widget.js" data-account="F8PUnemP2K"></script>
+    <script src="script.js"></script>
+</body>
+</html>
